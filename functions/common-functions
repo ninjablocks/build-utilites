@@ -54,9 +54,9 @@ function libIConv()
 function zlib()
 {
 	cd ${WORK_SPACE} || exit 1
-	COMPONENT_NAME="zlib-1.2.7.tar.gz"
-	COMPONENT_DIR="zlib-1.2.7"
-	download_component "http://zlib.net/zlib-1.2.7.tar.gz"
+	COMPONENT_NAME="zlib-1.2.8.tar.gz"
+	COMPONENT_DIR="zlib-1.2.8"
+	download_component "http://zlib.net/zlib-1.2.8.tar.gz"
 	if [ ${CURRENT_OPTION} = "2" ]; then
 		add_fingerprint 0
 		./configure --prefix=${MY_PREFIX} --sysconfdir=${MY_SYSCONFDIR} --localstatedir=${MY_LOCALSTATEDIR} || exit 1
